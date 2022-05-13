@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { OverlayModule } from '@angular/cdk/overlay';
 import { FirstComponent } from './first.component';
 
 describe('FirstComponent', () => {
@@ -8,9 +8,9 @@ describe('FirstComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FirstComponent ]
-    })
-    .compileComponents();
+      declarations: [FirstComponent],
+      imports: [OverlayModule],
+    }).compileComponents();
   });
 
   beforeEach(() => {
